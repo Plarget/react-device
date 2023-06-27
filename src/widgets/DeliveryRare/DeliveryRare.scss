@@ -1,0 +1,45 @@
+.delivery-rare {
+
+  &:not(:last-child) {
+    padding-block-end: 70px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F0F0F0;
+    align-items: center;
+    height: 100px;
+    padding-right: 42px;
+
+    @media (max-width: 885px) {
+      height: auto;
+      flex-direction: column;
+      justify-content: initial;
+      row-gap: 20px;
+      text-align: center;
+      padding-right: 0;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #FFE17F;
+    padding-left: 40px;
+    padding-right: 40px;
+    @media (max-width: 885px) {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__title {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

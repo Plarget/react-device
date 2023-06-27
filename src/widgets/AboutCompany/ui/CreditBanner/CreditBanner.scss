@@ -1,0 +1,14 @@
+.credit-banner {
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__about {
+    max-width: 600px;
+
+    @media (max-width: 1025px) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+$buttonWidth: 40px;
+$buttonHeight: 30px;
+$buttonColor: #000000;
+$lineThickness: 4px;
+$transitionSpeed: .3s;
+$transitionEasing: ease-in-out;
+
+.burger-button {
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: $buttonWidth;
+  height: $buttonHeight;
+
+  border-top: $lineThickness solid;
+  border-bottom: $lineThickness solid;
+
+  color: $buttonColor;
+  font-size: 0;
+
+  transition: all $transitionSpeed $transitionEasing;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: $lineThickness;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background: currentColor;
+
+    transform: translate(-50%, -50%);
+    transition: transform $transitionSpeed $transitionEasing;
+  }
+
+  &.is-opened {
+    border-color: transparent;
+
+    &:before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &:after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}

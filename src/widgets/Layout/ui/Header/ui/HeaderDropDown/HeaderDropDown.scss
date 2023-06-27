@@ -1,0 +1,47 @@
+.drop-down {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%) ;
+  width: 100%;
+  background-color: #FFE17F;
+  padding-bottom: 60px;
+  transition: 0.35s;
+
+  &:not(.is-active) {
+    visibility: hidden;
+    bottom: 25px;
+    opacity: 0;
+  }
+
+  &__list {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 222px);
+    row-gap: 18px;
+    column-gap: 30px;
+  }
+
+  &__item {
+
+    &:last-child {
+      grid-column: 1/2;
+    }
+  }
+
+  &__link {
+    color: #000000;
+    line-height: 18px;
+    transition: 0.3s;
+
+    &.active {
+      color: #FFFFFF;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

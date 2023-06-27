@@ -1,0 +1,38 @@
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+
+  &__link {
+    color: inherit;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #000000;
+      transform: translate(50%,25%);
+      height: 3px;
+      width: 50%;
+      transition: width 0.3s;
+    }
+
+    &:not(:hover):after  {
+      width: 0;
+    }
+
+    &.active {
+      color: #FFFFFF;
+      &:after {
+        width: 50%;
+        background-color: #FFFFFF;
+      }
+    }
+  }
+
+  &.label--white &__link:after {
+    background-color: #FFFFFF;
+  }
+}

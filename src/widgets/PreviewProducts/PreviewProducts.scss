@@ -1,0 +1,152 @@
+.preview-products {
+
+  &:not(:last-child) {
+    padding-block-end: 70px;
+  }
+
+  &__header {
+    background-color: #FFE17F;
+    overflow: hidden;
+    padding-left: 60px;
+    padding-right: 60px;
+    position: relative;
+    height: 120px;
+
+    &-counter {
+      position: absolute;
+      top: 0;
+      right: 60px;
+      font-size: 180px;
+      font-weight: 700;
+      line-height: 0.8;
+      color: #FFFFFF
+    }
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__body {
+    display: flex;
+    position: relative;
+    top: -38px;
+    column-gap: 40px;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+  &__slider {
+    max-width: 560px;
+    position: relative;
+    padding-left: 30px;
+    object-fit: contain;
+
+    @media (max-width: 1024px) {
+      padding: 0;
+    }
+
+    @media(max-width: 560px) {
+      width: 100%;
+    }
+  }
+
+  &__button-prev,
+  &__button-next {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+
+  &__button-prev {
+    left: 0;
+    rotate: -180deg;
+    transform: translateY(50%);
+
+  }
+
+  &__button-next {
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  &__pagination {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    pointer-events: none;
+    --swiper-pagination-bullet-horizontal-gap: 0px;
+
+    & .swiper-pagination-bullet {
+      pointer-events: visible;
+      padding: 10px !important;
+      background-color: transparent;
+      position: relative;
+      opacity: 1;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 12px;
+        width: 12px;
+        border: 2px solid #000000;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &.swiper-pagination-bullet-active {
+        &::after {
+          background-color: #000000;
+        }
+      }
+    }
+
+    --swiper-pagination-bullet-width: 12px;
+    --swiper-pagination-bullet-height: 12px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    padding-top: 10px;
+    max-width: 545px;
+    @media (max-width: 1024px) {
+      text-align: center;
+    }
+
+  }
+
+  &__description {
+    margin-bottom: 60px;
+  }
+
+  &__stats {
+    display: flex;
+    column-gap: 20px;
+
+    &-stat {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 30px;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 1024px) {
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    width: 220px;
+    margin-bottom: 60px;
+  }
+
+}

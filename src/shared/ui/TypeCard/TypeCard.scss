@@ -1,0 +1,27 @@
+.type-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 33px;
+  max-width: 160px;
+
+  &__wrapper-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    background-color: #FFE17F;
+
+    &.image-bottom {
+      align-items: flex-end;
+    }
+  }
+
+  &__text {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+  }
+}

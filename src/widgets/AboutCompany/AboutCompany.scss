@@ -1,0 +1,17 @@
+.about-company {
+  padding-top: 100px;
+
+  &:not(:last-child) {
+    padding-block-end: 70px;
+  }
+
+  &__inner {
+    background-color: #F0F0F0;
+  }
+
+  &__body {
+    position: relative;
+    top: -100px;
+  }
+
+}

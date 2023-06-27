@@ -1,0 +1,114 @@
+.information {
+
+  &:not(:last-child) {
+    padding-block-end: 70px;
+  }
+
+  &__body {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    @media (max-width: 1025px) {
+      flex-direction: column;
+      justify-content: initial;
+      align-items: center;
+
+    }
+  }
+
+  &__item {
+    padding-top: 47px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 7px;
+      width: 84px;
+      background-color: #000000;
+    }
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      align-items: flex-start;
+    }
+
+    &-title {
+      margin-bottom: 48px;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      row-gap: inherit;
+    }
+
+    &-label {
+      color: #444444;
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__about {
+    max-width: 520px;
+
+    &-button {
+      min-width: 270px;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 19px;
+      padding-left: 3px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      column-gap: 26px;
+      &::before {
+        content: '';
+        display: block;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: #FFC700;
+      }
+    }
+  }
+
+  &__contact {
+    max-width: 532px;
+
+    &-place {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+
+    &-time {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+
+    &-tel {
+      font-size: initial;
+      line-height: initial;
+      text-decoration: underline;
+      color: initial;
+    }
+
+    &-button {
+      min-width: 259px;
+    }
+
+  }
+
+
+}

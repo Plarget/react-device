@@ -1,0 +1,27 @@
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('~@shared/assets/fonts/Rubik-Regular.woff2') format('woff2'),
+  url('~@shared/assets/fonts/Rubik-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('~@shared/assets/fonts/Rubik-Bold.woff2') format('woff2'),
+  url('~@shared/assets/fonts/Rubik-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('~@shared/assets/fonts/Raleway-ExtraBold.woff2') format('woff2'),
+  url('~@shared/assets/fonts/Raleway-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
