@@ -5,9 +5,9 @@
   @media (max-width: 1025px) {
     text-align: center;
   }
+
   &__logo {
     margin-bottom: 35px;
-
   }
 
   &__column {
@@ -16,11 +16,11 @@
     grid-template-columns: 236px 1fr auto;
     grid-template-rows: 1fr 1fr;
     row-gap: 47px;
+
     @media (max-width: 1025px) {
       display: flex;
       flex-direction: column;
       align-items: center;
-
     }
   }
 
@@ -35,6 +35,12 @@
   &__socials,
   &__menu {
     justify-self: center;
+  }
+
+  &__phone-link {
+    &:hover {
+      color: #FFC700;
+    }
   }
 
   &__phone-link,

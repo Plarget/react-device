@@ -2,6 +2,16 @@
   display: flex;
   column-gap: 106px;
 
+  @media (max-width: 1150px) {
+    column-gap: 20px;
+  }
+
+  @media (max-width: 625px) {
+    flex-direction: column;
+    row-gap: 30px;
+    text-align: center;
+  }
+
   &__about {
     max-width: 452px;
     @media (max-width: 625px) {
@@ -11,15 +21,5 @@
 
   &__title {
     margin-bottom: 34px;
-  }
-
-  @media (max-width: 1150px) {
-    column-gap: 20px;
-  }
-
-  @media (max-width: 625px) {
-    flex-direction: column;
-    row-gap: 30px;
-    text-align: center;
   }
 }

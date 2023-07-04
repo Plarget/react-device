@@ -1,0 +1,42 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: #EBEBEB;
+  padding: 16px 25px;
+  user-select: none;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    padding-inline: 10px;
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__button-next,
+  &__button-prev {
+    &:not(.is-active) {
+      opacity: 0.3;
+    }
+  }
+
+  &__more {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 5px;
+    align-items: flex-end;
+    justify-content: center;
+    color: inherit;
+    opacity: 0.3;
+
+    @media (max-width: 480px) {
+      width: 30px;
+      height: 30px;
+      padding-bottom: 0;
+    }
+  }
+}

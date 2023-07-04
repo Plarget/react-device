@@ -52,6 +52,12 @@
     @media(max-width: 560px) {
       width: 100%;
     }
+
+    & .icon-button {
+      &.swiper-button-disabled {
+        opacity: 0.3;
+      }
+    }
   }
 
   &__button-prev,
@@ -59,6 +65,10 @@
     position: absolute;
     top: 50%;
     z-index: 1;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__button-prev {

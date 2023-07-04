@@ -6,6 +6,7 @@
   &__link {
     color: inherit;
     position: relative;
+    padding-block: 8px;
 
     &:after {
       content: '';
@@ -23,12 +24,8 @@
       width: 0;
     }
 
-    &.active {
-      color: #FFFFFF;
-      &:after {
+    &.active:after {
         width: 50%;
-        background-color: #FFFFFF;
-      }
     }
   }
 

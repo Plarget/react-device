@@ -3,7 +3,7 @@
   z-index: 3;
   bottom: 0;
   left: 0;
-  transform: translateY(100%) ;
+  transform: translateY(100%);
   width: 100%;
   background-color: #FFE17F;
   padding-bottom: 60px;
@@ -16,8 +16,7 @@
   }
 
   &__list {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-inline: var(--header-padding-inline);
     display: grid;
     grid-template-columns: repeat(3, 222px);
     row-gap: 18px;
@@ -25,19 +24,35 @@
   }
 
   &__item {
-
-    &:last-child {
+    &:nth-child(5) + &:last-child {
       grid-column: 1/2;
     }
   }
 
   &__link {
+    --link-undreline-width: 35%;
     color: #000000;
     line-height: 18px;
     transition: 0.3s;
+    position: relative;
 
-    &.active {
-      color: #FFFFFF;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      background-color: #000000;
+      height: 3px;
+      width: var(--link-undreline-width);
+      transition: width 0.3s;
+    }
+
+    &:not(:hover):after {
+      width: 0;
+    }
+
+    &.active:after {
+      width: var(--link-undreline-width);
     }
 
     &:hover {

@@ -1,0 +1,12 @@
+.checkbox-group {
+
+  &__body {
+    display: grid;
+    gap: 17px;
+
+    @media (max-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

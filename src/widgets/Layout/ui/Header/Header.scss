@@ -1,20 +1,28 @@
 .header {
   padding-top: 40px;
 
-  &__inner {
+  @media (max-width: 1025px) {
+    padding: 0;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: #FFE17F;
+  }
 
+  &__inner {
     @media (max-width: 1025px) {
       height: 100%;
     }
   }
 
   &__body {
+    --header-padding-inline: 60px;
     position: relative;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 46px var(--header-padding-inline) 14px var(--header-padding-inline);
     background-color: #FFE17F;
-    padding-top: 46px;
-    padding-bottom: 14px;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
@@ -30,24 +38,12 @@
   &__logo {
     position: absolute;
     top: 0;
-    left: 60px;
     transform: translateY(-50%);
 
     @media (max-width: 1025px) {
       position: relative;
       left: 0;
-      transform: translate(0,0);
+      transform: translate(0, 0);
     }
-  }
-
-  @media (max-width: 1025px) {
-    padding: 0;
-    position: fixed;
-    z-index: 4;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 70px;
-    background-color: #FFE17F;
   }
 }

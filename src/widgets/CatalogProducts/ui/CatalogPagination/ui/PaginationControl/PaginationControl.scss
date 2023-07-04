@@ -1,0 +1,21 @@
+.pagination__control {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  opacity: 0.6;
+
+  @media (max-width: 480px) {
+    width: 30px;
+    height: 30px;
+  }
+  &:not(.is-active) {
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

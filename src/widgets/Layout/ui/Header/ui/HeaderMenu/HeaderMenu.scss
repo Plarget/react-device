@@ -12,38 +12,18 @@
 
     &:hover {
       & .react-svg {
-        rotate: 45deg;
+        rotate: 10deg;
       }
     }
 
     &.is-active {
       & .react-svg {
-        rotate: 135deg;
+        rotate: 45deg;
       }
     }
-
-    @media (max-width: 1025px) {
-      justify-content: center;
-    }
   }
 
-  &-wrapper {
+  &-button-wrapper {
     margin-right: auto;
-    @media (max-width: 1025px) {
-      margin: 0;
-    }
-
-  }
-
-  &-list {
-    @media (max-width: 1025px) {
-      flex-direction: column;
-      row-gap: inherit;
-    }
-  }
-
-  @media (max-width: 1025px) {
-    flex-direction: column;
-    row-gap: inherit;
   }
 }

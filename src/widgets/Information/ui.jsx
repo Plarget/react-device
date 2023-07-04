@@ -37,10 +37,10 @@ const Information = () => {
             </div>
             <div className="information__contact-place">
               <h3 className="information__item-label">Интернет-магазин «Девайс»</h3>
-              <address className="information__contact-address text">
+              <div className="information__contact-address text">
                 <Address/>
                 <PhoneLink/>
-              </address>
+              </div>
             </div>
             <div className="information__contact-time">
               <h3 className="information__item-label">Интернет-магазин «Девайс»</h3>

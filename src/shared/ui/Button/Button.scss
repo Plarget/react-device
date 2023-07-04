@@ -5,6 +5,7 @@
   text-align: center;
   column-gap: 12px;
   transition: 0.3s;
+  user-select: none;
 
   &--line {
     position: relative;
@@ -47,6 +48,17 @@
 
     &:hover {
       background-color: rgb(196, 196, 196, 0.2);
+    }
+  }
+
+  &--white {
+    height: 50px;
+    background-color: #FFFFFF;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    &:hover {
+      opacity: 0.7;
     }
   }
 }

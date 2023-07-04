@@ -11,7 +11,7 @@ const AboutCompany = () => {
       <div className="about-company__inner">
         <div className="about-company__body container">
           <AboutTabs
-            items={ [
+            items={[
               {
                 id: 'delivery',
                 title: 'Доставка',
@@ -27,8 +27,7 @@ const AboutCompany = () => {
                 title: 'Кредит',
                 content: <CreditBanner/>,
               },
-            ] }
-
+            ]}
           />
         </div>
       </div>

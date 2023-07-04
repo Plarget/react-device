@@ -1,0 +1,41 @@
+.basket-preview {
+  width: 320px;
+  min-height: 120px;
+  display: grid;
+
+  &__empty {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__products {
+    max-height: 166px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__info {
+    padding: 20px;
+    background-color: #1A1A1A;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button-wrapper {
+    padding: 20px;
+  }
+
+  &__button {
+    width: 100%;
+  }
+
+}

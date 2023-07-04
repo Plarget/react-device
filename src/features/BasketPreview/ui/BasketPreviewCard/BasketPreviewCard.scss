@@ -1,0 +1,36 @@
+
+.basket-preview-card {
+  --preview-card-padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--preview-card-padding);
+  padding-right: calc(50px + var(--preview-card-padding));
+  position: relative;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  &__preview {
+    display: flex;
+    column-gap: 23px;
+  }
+
+  &__image {
+    height: 43px;
+  }
+
+  &__button {
+    --size-button: 30px;
+    position: absolute;
+    height: var(--size-button);
+    width: var(--size-button);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 11px;
+    right: 10px;
+
+  }
+}

@@ -1,21 +1,25 @@
 import classNames from 'classnames'
-import HeaderMenu from '@widgets/Layout/ui/Header/ui/HeaderMenu'
-import HeaderActions from '@widgets/Layout/ui/Header/ui/HeaderActions'
-import { forwardRef } from 'react'
+import {forwardRef} from 'react'
+import Menu from '@shared/ui/Menu'
 import './HeaderMobileMenu.scss'
 
 const HeaderMobileMenu = forwardRef(function HeaderMobileMenu(props, ref) {
-  const { isMenuOpened } = props
+  const {
+    isMenuOpened,
+    setIsMenuOpened,
+  } = props
+  const onClick = (path) => {
+    setIsMenuOpened(false)
+  }
 
   return (
     <div
-      className={ classNames(
+      className={classNames(
         'mobile-menu',
         { 'is-opened': isMenuOpened }
-      ) }
+      )}
     >
-      <HeaderActions/>
-      <HeaderMenu/>
+      <Menu className="mobile-menu__list label" menuMobile onClick={onClick}/>
     </div>
   )
 })

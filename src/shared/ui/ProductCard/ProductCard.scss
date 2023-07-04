@@ -1,0 +1,25 @@
+.product-card {
+  max-width: 360px;
+  display: grid;
+  row-gap: 32px;
+
+  &__info {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+  }
+
+  &__label {
+    max-width: 226px;
+  }
+
+  &__price {
+    white-space: nowrap;
+  }
+
+  &__button-link {
+    cursor: pointer;
+    display: inline-flex;
+    text-align: initial;
+  }
+}
