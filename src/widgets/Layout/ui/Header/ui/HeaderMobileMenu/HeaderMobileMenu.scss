@@ -25,8 +25,9 @@
   &__list {
     display: flex;
     flex-direction: column;
+    padding-block: 40px;
+    align-items: center;
     row-gap: 20px;
-    justify-content: center;
     max-height: 100%;
   }
 }

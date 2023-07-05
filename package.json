@@ -2,8 +2,13 @@
   "name": "react-devace",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
-    "@craco/craco": "^7.1.0",
     "@hookform/resolvers": "^3.1.1",
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.4.0",
@@ -33,13 +38,8 @@
     "@types/react-redux": "^7.1.25",
     "react-scripts": "5.0.1",
     "sass": "^1.63.6",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
+    "web-vitals": "^2.1.4",
+    "@craco/craco": "^7.1.0"
   },
   "eslintConfig": {
     "extends": [
